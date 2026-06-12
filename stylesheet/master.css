@@ -1,0 +1,434 @@
+:root {
+  --mainColor: #76b62b;
+  --secondColor: #ffa42d;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+.top-header {
+  min-height: 90px;
+  padding: 0 10.5%;
+  /*border: 2px solid red;*/
+  justify-content: space-between;
+  > div {
+    /*border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+
+    &:nth-of-type(1) {
+      > a {
+        > img {
+          height: 40px;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 50%;
+      > form {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        > div {
+          width: 100%;
+          &:first-of-type {
+            > input {
+              display: flex;
+              width: 100%;
+              height: 60px;
+              border-top-left-radius: 5px;
+              border-bottom-left-radius: 5px;
+              border: 1px solid rgb(159, 159, 159);
+              padding-left: 10px;
+              outline: none;
+              &:focus {
+                border: 1.5px solid var(--mainColor);
+              }
+            }
+          }
+          &:last-of-type {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > a {
+              background-color: black;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              > img {
+                width: 50%;
+                height: 50%;
+                color: white;
+              }
+              &:hover {
+                background-color: var(--mainColor);
+              }
+            }
+          }
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      display: flex;
+      justify-content: space-between;
+      /*border: 1px solid red;*/
+      width: 12%;
+      position: relative;
+      > img {
+        &:hover {
+          + form {
+            visibility: visible;
+          }
+        }
+      }
+      > form {
+        transition: 1s;
+        visibility: hidden;
+        z-index: 1;
+        padding: 20px;
+        background-color: white;
+        position: absolute;
+        top: 90px;
+        left: -150px;
+        min-height: 200px;
+        width: 150%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 5px;
+        > input {
+          line-height: 50px;
+          border-radius: 5px;
+          border: 1px solid rgb(241, 241, 241);
+          padding-left: 10px;
+          outline: 0;
+          &:focus {
+            border: 1px solid var(--mainColor);
+          }
+        }
+        > div {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: end;
+          gap: 10px;
+          > input {
+            width: 45%;
+            height: 30px;
+            background-color: var(--secondColor);
+            justify-content: end;
+            line-height: 20px;
+            border: none;
+            border-radius: 5px;
+          }
+          > a {
+            display: flex;
+            width: 51%;
+            justify-content: end;
+            font-size: 14px;
+          }
+        }
+        > label {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}
+.nav-header {
+  padding: 0 10.5%;
+  /*border: 1px solid red;*/
+  height: 80px;
+  background-color: var(--mainColor);
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+  > div {
+    width: 30%;
+    height: 100%;
+    /*border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+    &:nth-of-type(1) {
+      width: 15%;
+      > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+        background-color: #4d791c;
+        border-radius: 7px;
+        color: white;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-transform: uppercase;
+        &:hover {
+          + .first-menu {
+            visibility: visible;
+          }
+        }
+      }
+      > .first-menu {
+        visibility: hidden;
+        position: absolute;
+        top: 90px;
+        background-color: white;
+        width: 20%;
+        border-radius: 8px;
+        padding: 30px;
+        transition: 1s;
+        > li {
+          background-color: white;
+          line-height: 40px;
+          > a {
+            color: rgb(71, 71, 71);
+            &:hover {
+              color: var(--secondColor);
+            }
+          }
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      width: 50%;
+      > nav {
+        width: 100%;
+        > ul {
+          display: flex;
+          justify-content: space-between;
+          > li {
+            /*border: 1px solid red;*/
+            > a {
+              /*background-color: rgb(0, 119, 255);*/
+              color: white;
+              font-weight: 600;
+              > img {
+                width: 15px;
+                height: 15px;
+              }
+            }
+            &:nth-of-type(3) {
+              &:hover {
+                > .megamenu1 {
+                  > li {
+                    visibility: visible;
+                  }
+                }
+              }
+            }
+            .megamenu1 {
+              background-color: white;
+              transition: 1s;
+              > li {
+                transition: 1s;
+                display: flex;
+                position: absolute;
+                left: 10.5%;
+                top: 90px;
+                width: 79%;
+                min-height: 100px;
+                background-color: white;
+                border-radius: 8px;
+                padding: 20px;
+                gap: 25px;
+                visibility: hidden;
+                > div {
+                  display: flex;
+                  width: 33.33%;
+                  padding: 0 10px;
+                  align-content: center;
+                  &:nth-of-type(1) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: baseline;
+                    gap: 45px;
+                    > div {
+                      &:first-of-type {
+                        > h4 {
+                          border-bottom: 1px solid rgb(225, 225, 225);
+                          font-family:
+                            Arial, "Helvetica Neue", Helvetica, sans-serif;
+                          padding-bottom: 15px;
+                          text-transform: capitalize;
+                          font-size: 20px;
+                          color: rgb(50, 50, 50);
+                          width: 300px;
+                        }
+                      }
+                      &:last-of-type {
+                        > figure {
+                          display: flex;
+                          padding-bottom: 20px;
+                          gap: 20px;
+                          > img {
+                            width: 25%;
+                            border-radius: 8px;
+                          }
+                          > div {
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-content: space-evenly;
+                            > a {
+                              display: flex;
+                              width: 100%;
+                              &:hover {
+                                color: var(--mainColor);
+                              }
+                            }
+                            > span {
+                              color: red;
+                              font-weight: 600;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &:nth-of-type(2) {
+                    height: 350px;
+                    background-image: url(../images/vegan-products-1.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 8px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-left: 30px;
+                    align-content: start;
+                    gap: 20px;
+                    > h4 {
+                      padding-top: 30px;
+                      font-size: 30px;
+                      color: rgb(78, 78, 78);
+                      width: 60%;
+                      text-transform: capitalize;
+                    }
+                    > a {
+                      width: 50%;
+                      color: rgb(97, 97, 97);
+                      font-size: 18px;
+                      font-weight: 600;
+                      text-transform: capitalize;
+                    }
+                  }
+                  &:nth-of-type(3) {
+                    border-radius: 8px;
+                    background-image: url(../images/vegan-beauty-products-1.jpg);
+                    background-size: 300px auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-left: 30px;
+                    align-content: start;
+                    gap: 20px;
+                    > h4 {
+                      padding-top: 30px;
+                      font-size: 27px;
+                      color: rgb(78, 78, 78);
+                      width: 60%;
+                      text-transform: capitalize;
+                    }
+                    > a {
+                      width: 50%;
+                      color: rgb(97, 97, 97);
+                      font-size: 18px;
+                      font-weight: 600;
+                      text-transform: capitalize;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      width: 17%;
+      display: flex;
+      > div {
+        &:first-of-type {
+          > img {
+            width: 55px;
+            height: 50px;
+          }
+        }
+        &:last-of-type {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          align-content: center;
+          gap: 10px;
+          > span {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            width: 100%;
+            color: white;
+            &:last-of-type {
+              font-weight: 700;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.under-menu {
+  min-height: 500px;
+  background-image: url(../images/imgi_7_hero-image-1.jpg);
+  background-size: cover;
+  justify-content: center;
+  > div {
+    background-color: rgba(0, 0, 0, 0.662);
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    > * {
+      color: white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    > h1 {
+      font-size: 60px;
+    }
+    > h4 {
+      font-size: 50px;
+      font-weight: 100;
+    }
+    > div {
+      gap: 20px;
+      > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65px;
+        border-radius: 5px;
+        /*border: 1px solid red;*/
+        width: 200px;
+        font-weight: 600;
+        text-transform: capitalize;
+        &:first-of-type {
+          background-color: var(--secondColor);
+          &:hover {
+            background-color: var(--mainColor);
+          }
+        }
+        &:last-of-type {
+          border: 2px solid white;
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
