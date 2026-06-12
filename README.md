@@ -30,4 +30,18 @@ This project focuses on clean UI design, semantic structure, and basic front-end
 
 ---
 
-## 📂 Project Structure
+## 🎯 Purpose of the Project
+
+This project was created to practice:
+
+- HTML structure and semantic tags  
+- CSS styling and layout techniques    
+
+---
+
+## ⚙️ How to Run Locally
+
+```bash
+git clone https://github.com/elhamnosani/vegan-store.git
+cd vegan-store
+open index.html
