@@ -12,19 +12,15 @@ This project focuses on clean UI design, semantic structure, and basic front-end
 ---
 
 ## 📸 Preview
-
-![Preview](./assets/images/preview.png)
+![Preview](./images/preview1.png)
 
 ---
 
 ## ✨ Features
 
-- Responsive design for all devices 📱💻  
 - Clean and modern UI layout  
 - Built with HTML5 semantic structure  
 - Styled using pure CSS3  
-- Lightweight and fast loading  
-
 ---
 
 ## 🛠️ Technologies Used
