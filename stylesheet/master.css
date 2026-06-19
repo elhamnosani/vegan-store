@@ -168,6 +168,7 @@ body {
         &:hover {
           + .first-menu {
             visibility: visible;
+            transition: .4s;
           }
         }
       }
@@ -215,6 +216,7 @@ body {
                 > .megamenu1 {
                   > li {
                     visibility: visible;
+                    transition: .4s;
                   }
                 }
               }
