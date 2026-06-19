@@ -13,7 +13,7 @@ This project focuses on clean UI design, semantic structure, and basic front-end
 
 ## 📸 Preview
 ![Preview](./images/preview1.png)
-
+![Preview](./images/preview2.png)
 ---
 
 ## ✨ Features
