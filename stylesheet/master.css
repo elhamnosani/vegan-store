@@ -1369,3 +1369,76 @@ body {
     }
   }
 }
+.my-photo{
+  /* background-color: var(--mainColor); */
+  padding: 100px 10.5%;
+  >div{
+    /* border: 1px solid black; */
+    justify-content: center;
+    position: relative;
+    >div{
+      /* border: 1px solid red; */
+      width: 20%;
+      /* background-color: white; */
+      
+      &:first-of-type{
+        z-index: 1;
+        
+        >img{
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.468);
+        width: 100%;
+        height: 100%;
+        border-radius: 50px 0 50px 0;
+          }
+          &:hover{
+          +div{
+            top: 55px;
+            left: 540px;
+            opacity: 1;
+            visibility: visible;
+            transition: .4s;
+          }
+        }
+      }
+      &:last-of-type{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        position: absolute;
+        top: 40px;
+        left: 540px;
+        background-color: #76b62b;
+        border-radius: 5px 0 50px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 1s;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.468);
+        >ul{
+          >li{
+            margin: 5px 10px 5px 0;
+            width: 100%;
+            >a{
+            display: flex;
+            height: 40px;
+            width: 40px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+          }
+        }
+        >span{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          font-size: 14px;
+          color: white;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
