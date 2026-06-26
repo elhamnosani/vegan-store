@@ -12,13 +12,20 @@ This project focuses on clean UI design, semantic structure, and basic front-end
 ---
 
 ## 📸 Preview
+| Preview | Preview |
+|---------|---------|
+| ![](images/preview1.png) | ![](images/preview2.png) |
+| ![](images/3.png) | ![](images/4.png) |
+| ![](images/5.png) | ![](images/6.png) |
+| ![](images/7.png) | 
+<!--
 ![Preview](./images/preview1.png)
 ![Preview](./images/preview2.png)
 ![Preview](./images/3.png)
 ![Preview](./images/4.png)
 ![Preview](./images/5.png)
 ![Preview](./images/6.png)
-![Preview](./images/7.png)
+![Preview](./images/7.png)-->
 ---
 
 ## ✨ Features
